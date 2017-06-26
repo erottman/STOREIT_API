@@ -1,0 +1,38 @@
+{
+  "name": "STOREIT_API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon -e js,hbs ./bin/www",
+    "knex": "knex"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erottman/STOREIT_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erottman/STOREIT_API/issues"
+  },
+  "homepage": "https://github.com/erottman/STOREIT_API#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.2",
+    "express": "^4.15.3",
+    "knex": "^0.13.0",
+    "method-override": "^2.3.9",
+    "pg": "^6.4.0",
+    "prg": "^0.1.2",
+    "rp": "^0.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0"
+  }
+}
