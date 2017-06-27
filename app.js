@@ -19,6 +19,9 @@ const index = require('./routes/index');
 const users = require('./routes/users');
 const facilities = require('./routes/facilities');
 const units = require('./routes/units');
+const boxes = require('./routes/boxes');
+const tenents = require('./routes/tenents');
+const items = require('./routes/items');
 
 
 
@@ -35,6 +38,9 @@ app.use('/', index);
 app.use('/api/users', users);
 app.use('/api/facilities', facilities);
 app.use('/api/units', units);
+app.use('/api/boxes', boxes);
+app.use('/api/tenents', tenents);
+app.use('/api/items', items);
 
 
 
