@@ -3,6 +3,7 @@ exports.seed = function(knex) {
   .then(() => {
     return knex('tenents').insert([{
       id: 1,
+      user_id: 1,
       first_name: 'Erica',
       last_name: 'Rottman',
       address_line_1: '123 Moving Ave',
@@ -14,6 +15,7 @@ exports.seed = function(knex) {
       email: 'erica7650@gmail.com'
   },{
       id: 2,
+      user_id: 2,
       first_name: 'Brandy',
       last_name: 'Welch',
       address_line_1: '111 Magical Lane',
@@ -25,6 +27,7 @@ exports.seed = function(knex) {
       email: 'brandy@gmail.com'
 },{
       id: 3,
+      user_id: 3,
       first_name: 'Brooke',
       last_name: 'Orsen',
       address_line_1: '555 Elm Street',
