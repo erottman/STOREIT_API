@@ -1,18 +1,17 @@
 exports.up = (knex) => {
 return knex.schema.createTable('facilities', table => {
   table.increments()
-  table.varchar('name', 60).notNullable()
-  table.string('description').notNullable()
-  table.varchar('address_line_1', 255).notNullable();
-  table.varchar('address_line_2', 255);
-  table.varchar('city', 60).notNullable();
+  table.string('name').notNullable()
+  table.text('description').notNullable()
+  table.string('address_line_1').notNullable();
+  table.string('address_line_2');
+  table.string('city').notNullable();
   table.varchar('state', 2).notNullable();
   table.integer('zip').notNullable();
-  table.varchar('phone_number', 12).notNullable();
-  table.varchar('email_address', 60).notNullable();
-  table.string('logo_img')
-  table.string('url')
-  table.timestamps(true, true)
+  table.varchar('phone_number',12).notNullable();
+  table.string('logo_img');
+  table.string('url');
+  table.timestamps(true, true);
   })
 }
 
