@@ -18,6 +18,7 @@ const cookieSession = require('cookie-session');
 const index = require('./routes/index');
 const users = require('./routes/users');
 const facilities = require('./routes/facilities');
+const units = require('./routes/units');
 
 
 
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/api/users', users);
 app.use('/api/facilities', facilities);
+app.use('/api/units', units);
 
 
 
