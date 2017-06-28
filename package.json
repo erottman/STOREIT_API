@@ -28,11 +28,11 @@
     "method-override": "^2.3.9",
     "pg": "^6.4.0",
     "prg": "^0.1.2",
-    "rp": "^0.2.0"
+    "rp": "^0.2.0",
+    "morgan": "^1.8.2",
   },
   "devDependencies": {
     "dotenv": "^4.0.0",
-    "morgan": "^1.8.2",
     "nodemon": "^1.11.0"
   }
 }
