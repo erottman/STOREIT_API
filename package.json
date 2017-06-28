@@ -26,10 +26,12 @@
     "express": "^4.15.3",
     "knex": "^0.13.0",
     "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
     "pg": "^6.4.0",
     "prg": "^0.1.2",
-    "rp": "^0.2.0",
-    "morgan": "^1.8.2"
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "rp": "^0.2.0"
   },
   "devDependencies": {
     "dotenv": "^4.0.0",
