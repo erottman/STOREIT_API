@@ -69,11 +69,11 @@ router.post('/', (req, res, next) => {
       phone_number: req.body.phone_number,
       email: req.body.email };
 
-    return knex('customers')
-      .insert({new_customer})
+    return knex('users')
+      .insert({new_user})
       .returning('*')
-      .then(customer => {
-        res.json(customer)
+      .then(user => {
+        res.json(user)
       })
   })
   .catch(err => next(err));
