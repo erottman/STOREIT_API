@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     return knex('facilities').insert([{
       id: 1,
       name: 'Public Storage',
-      description: 'Public storage in West Seattle with 100 units and car storage.  Provides onsite management, and 24 hour gate access. Climate controlled units available',
+      description: 'Public Storage is the leading provider of storage units for your personal, business and vehicle needs with thousands of locations nationwide. We offer a wide variety of units and sizes available with no obligation, no long-term commitment and no credit card required. Call today at 1-800-688-8057 for a free reservation and get your first month for just $1.',
       address_line_1: '2964 SW Avalon Way',
       address_line_2: '',
       city: 'Seattle',

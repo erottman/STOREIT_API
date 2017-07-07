@@ -5,31 +5,34 @@ exports.seed = function(knex) {
     return knex('boxes').insert([{
       id: 1,
       unit_id: 1,
-      label: 'box_1',
-      description: 'Plates and other flatware',
-      room: 'kitchen',
+      identifier: 'box1',
+      unit_number: 111,
       date_packed: '05-04-17',
       date_stored: '05-09-17',
-      unit_location: 'center left'
+      room: 'kitchen',
+      unit_location: 'center left',
+      description: 'Plates and other flatware'
     },
     {
       id: 2,
       unit_id: 2,
-      label: 'box_2',
-      description: 'linens and blankets',
-      room: 'bedroom',
+      identifier: 'box2',
+      unit_number: 222,
       date_packed: '05-03-17',
       date_stored: '05-08-17',
-      unit_location: 'front middle'
+      room: 'bedroom',
+      unit_location: 'front middle',
+      description: 'linens and blankets'
     },{
       id: 3,
       unit_id: 3,
-      label: 'box_3',
-      description: 'Office electronics for Jeremys office, including monitor, mouse, and cables',
-      room: 'office',
+      identifier: 'box3',
+      unit_number: 333,
       date_packed: '05-05-17',
       date_stored: '05-10-17',
-      unit_location: 'back right'
+      room: 'office',
+      unit_location: 'back right',
+      description: 'Office electronics for Jeremys office, including monitor, mouse, and cables'
     },
   ])
   })
