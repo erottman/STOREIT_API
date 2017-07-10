@@ -11,6 +11,7 @@ return knex.schema.createTable('tenents', table => {
   table.integer('zip').notNullable();
   table.varchar('phone_number', 12).notNullable();
   table.string('email').notNullable();
+  table.text('image_url').notNullable();
   table.timestamps(true, true)
   })
 }

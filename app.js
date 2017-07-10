@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const express = require('express');
+const cors = require('cors')
 const app = express();
 const path = require('path');
 const logger = require('morgan');
@@ -13,7 +14,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const rp = require('request-promise');
 const cookieSession = require('cookie-session');
-
+app.use(cors())
 
 const index = require('./routes/index');
 const users = require('./routes/users');
@@ -59,7 +60,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.json({err: err});
 });
 
 module.exports = app;

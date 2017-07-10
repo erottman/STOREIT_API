@@ -12,7 +12,8 @@ exports.seed = function(knex) {
       state: 'WA',
       zip: '98126',
       phone_number: '1233456789',
-      email: 'erica7650@gmail.com'
+      email: 'erica7650@gmail.com',
+      image_url:' https://scontent.xx.fbcdn.net/v/t1.0-9/11988267_10207158928629828_620534218710411961_n.jpg?oh=065f5ada9da008a10cc0b32716d54a0d&oe=59CD892C'
   },{
       id: 2,
       user_id: 2,
@@ -24,7 +25,8 @@ exports.seed = function(knex) {
       state: 'WA',
       zip: '98028',
       phone_number: '1233456789',
-      email: 'brandy@gmail.com'
+      email: 'brandy@gmail.com',
+      image_url: 'https://scontent.xx.fbcdn.net/v/t1.0-9/11988267_10207158928629828_620534218710411961_n.jpg?oh=065f5ada9da008a10cc0b32716d54a0d&oe=59CD892C'
 },{
       id: 3,
       user_id: 3,
@@ -36,7 +38,8 @@ exports.seed = function(knex) {
       state: 'WA',
       zip: '98310',
       phone_number: '1233456789',
-      email: 'brooke@gmail.com'
+      email: 'brooke@gmail.com',
+      image_url: 'https://scontent.xx.fbcdn.net/v/t1.0-9/11988267_10207158928629828_620534218710411961_n.jpg?oh=065f5ada9da008a10cc0b32716d54a0d&oe=59CD892C'
     },
   ])
   })
