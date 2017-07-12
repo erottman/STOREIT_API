@@ -1,7 +1,7 @@
 exports.up = (knex => {
   return knex.schema.createTable('boxes', (table) => {
     table.increments();
-    table.integer('unit_id').notNullable();
+    table.integer('unit_id');
     table.varchar('identifier', 10).notNullable();
     table.integer('unit_number').notNullable();
     table.varchar('date_packed',8).notNullable();
