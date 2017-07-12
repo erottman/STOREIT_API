@@ -17,6 +17,42 @@ router.get('/:id', (req, res, next) => {
     .catch(err => next(err));
 });
 
+router.put('/:id', (req, res, next) => {
+  console.log('body', req.body);
+  knex('items')
+    .update(req.body)
+    .where({id: req.params.id})
+    .returning('*')
+    .then(items => res.json(items[0]))
+    .catch(err => next(err));
+});
+
+
+router.post('/', (req, res, next) => {
+  console.log("im here");
+  let new_item = {
+    box_id: req.body.box_id,
+    box_identifier: req.body.box_identifier,
+    name: req.body.name,
+    quantity: req.body.quantity,
+    value: req.body.value,
+    description: req.body.description,
+    image_url: req.body.image_url,
+  }
+
+  knex('items')
+    .insert(new_item)
+    .returning('*')
+    .then(item => {
+      res.json(item)
+      })
+    .catch(err => {
+      console.log(err);
+      next(err)
+    });
+});
+
+
 
 router.delete('/:id', (req, res, next) => {
   knex('items')
