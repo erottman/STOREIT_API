@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
   knex('items')
     .where('id', req.params.id)
-    .then(item => res.json(item))
+    .then(item => res.json(item[0]))
     .catch(err => next(err));
 });
 
@@ -44,7 +44,7 @@ router.post('/', (req, res, next) => {
     .insert(new_item)
     .returning('*')
     .then(item => {
-      res.json(item)
+      res.json(item[0])
       })
     .catch(err => {
       console.log(err);

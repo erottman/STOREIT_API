@@ -45,7 +45,7 @@ router.post('/', (req, res, next) => {
     .insert(new_box)
     .returning('*')
     .then(box => {
-      res.json(box)
+      res.json(box[0])
       })
     .catch(err => {
       console.log(err);
