@@ -5,7 +5,7 @@ exports.up = (knex => {
     table.string('box_identifier', 10).notNullable();
     table.varchar('name', 60).notNullable();
     table.integer('quantity').notNullable();
-    table.decimal('value').notNullable();
+    table.integer('value').notNullable();
     table.string('description').notNullable();
     table.text('image_url').notNullable();
     table.timestamps(true, true);

@@ -10,7 +10,7 @@ exports.seed = function(knex) {
       date_packed: '05-04-17',
       date_stored: '05-09-17',
       room: 'kitchen',
-      unit_location: 'center left',
+      unit_location: 'Middle Center',
       description: 'Plates and other flatware'
     },
     {
@@ -21,7 +21,7 @@ exports.seed = function(knex) {
       date_packed: '05-03-17',
       date_stored: '05-08-17',
       room: 'bedroom',
-      unit_location: 'front middle',
+      unit_location: 'Front Left',
       description: 'linens and blankets'
     },{
       id: 3,
@@ -31,7 +31,7 @@ exports.seed = function(knex) {
       date_packed: '05-05-17',
       date_stored: '05-10-17',
       room: 'office',
-      unit_location: 'back right',
+      unit_location: 'Front Left',
       description: 'Office electronics for Jeremys office, including monitor, mouse, and cables'
     },
   ])
