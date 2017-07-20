@@ -31,6 +31,16 @@ exports.seed = function(knex) {
       description: 'Dell curved monitor 34in',
       image_url: 'https://images10.newegg.com/ProductImageCompressAll300/24-014-487-07.jpg'
     },
+    {
+      id: 4,
+      box_id: 3,
+      box_identifier: 'box3',
+      name: 'wine bottles',
+      quantity: 1,
+      value: 350,
+      description: 'South of France Collection',
+      image_url: 'http://keentype.com/post-images/wineBottles/vine-bottles-post.jpg'
+    },
   ])
   })
   .then(() => {
