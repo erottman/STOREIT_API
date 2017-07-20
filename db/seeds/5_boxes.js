@@ -9,9 +9,9 @@ exports.seed = function(knex) {
       unit_number: 111,
       date_packed: '05-04-17',
       date_stored: '05-09-17',
-      room: 'kitchen',
+      room: 'game room',
       unit_location: 'Middle Center',
-      description: 'Plates and other flatware'
+      description: 'Seahawks room posters and gear'
     },
     {
       id: 2,
