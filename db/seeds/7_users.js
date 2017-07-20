@@ -7,7 +7,7 @@ exports.seed = (knex) => {
         password: 'erica',
       }, {
         id:2,
-        username: 'brandy',
+        username: 'Brandy',
         password: 'brandy',
       },{
         id:3,
